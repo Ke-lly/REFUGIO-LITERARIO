@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 let livros = JSON.parse(localStorage.getItem("livros")) || [];
 let leitores = JSON.parse(localStorage.getItem("leitores")) || [];
 let emprestimos = JSON.parse(localStorage.getItem("emprestimos")) || [];
@@ -670,7 +668,7 @@ function listarEmprestimos() {
             <td>${status}</td>
             <td class="acoes-tabela">
                 ${emprestimo.status === "emprestado" ? `<button class="btn btn-sm botao-editar" data-acao="editar-emprestimo" data-id="${emprestimo.id}">Editar</button>` : ""}
-                <button class="btn btn-sm botao-devolver" data-acao="devolver-emprestimo" data-id="${emprestimo.id}">Devolver</button>
+                ${emprestimo.status === "emprestado" ? `<button class="btn btn-sm botao-devolver" data-acao="devolver-emprestimo" data-id="${emprestimo.id}">Devolver</button>` : ""}
                 <button class="btn btn-sm botao-excluir" data-acao="excluir-emprestimo" data-id="${emprestimo.id}">Excluir</button>
             </td>
         `;
@@ -973,4 +971,3 @@ listarLeitores();
 listarEmprestimos();
 atualizarTudo();
 carregarAcervoInicial();
->>>>>>> c5cc172 (style: Ajustando o estilo dos botões)
