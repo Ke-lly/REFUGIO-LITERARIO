@@ -12,7 +12,7 @@
     --borda: #e8e3ef;
     --primaria: #7356a5;
     --primaria-hover: #5f438e;
-    --destaque: #efd3f5;
+    --destaque:  rgba(73, 55, 95, 0.94);
     --escuro: #302641;
     --sucesso: #21865b;
     --erro: #c64e58;
@@ -26,9 +26,27 @@ body {
 }
 
 .topo {
-    background: linear-gradient(135deg, #7356a5, #49375f);
+    background:
+        linear-gradient(
+            rgba(48, 38, 65, 0.25),
+            rgba(48, 38, 65, 0.40)
+        ),
+        url("imagens/livros.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
     padding: 55px 0;
+}
+
+.topo-texto {
+    background: rgba(73, 55, 95, 0.94);
+    padding: 28px;
+    border-radius: 18px;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .topo-conteudo {
@@ -62,7 +80,7 @@ body {
 }
 
 .tag {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(228, 218, 218, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -73,7 +91,7 @@ body {
     display: grid;
     place-items: center;
     background: var(--destaque);
-    color: var(--escuro);
+    color: var(--claro);
     border-radius: 28px;
     font-size: 2.8rem;
     font-weight: bold;
@@ -330,7 +348,7 @@ body {
 
 @media (max-width: 600px) {
     .topo {
-        padding: 38px 0;
+        padding: 20px 0;
     }
 
     .topo-conteudo {
