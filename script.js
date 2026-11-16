@@ -501,7 +501,7 @@ function listarLeitores() {
             <td>${leitor.ativo ? "Ativo" : "Inativo"}</td>
             <td class="acoes-tabela">
                 <button class="btn btn-sm botao-editar" data-acao="editar-leitor" data-id="${leitor.id}">Editar</button>
-                <button class="btn btn-sm btn-secondary" data-acao="status-leitor" data-id="${leitor.id}">${leitor.ativo ? "Desativar" : "Ativar"}</button>
+                <button class="btn btn-sm botao-desativar" data-acao="status-leitor" data-id="${leitor.id}">${leitor.ativo ? "Desativar" : "Ativar"}</button>
                 <button class="btn btn-sm botao-excluir" data-acao="excluir-leitor" data-id="${leitor.id}">Excluir</button>
             </td>
         `;
@@ -668,7 +668,7 @@ function listarEmprestimos() {
             <td>${status}</td>
             <td class="acoes-tabela">
                 ${emprestimo.status === "emprestado" ? `<button class="btn btn-sm botao-editar" data-acao="editar-emprestimo" data-id="${emprestimo.id}">Editar</button>` : ""}
-                ${emprestimo.status === "emprestado" ? `<button class="btn btn-sm btn-success" data-acao="devolver-emprestimo" data-id="${emprestimo.id}">Devolver</button>` : ""}
+                ${emprestimo.status === "emprestado" ? `<button class="btn btn-sm botao-devolver" data-acao="devolver-emprestimo" data-id="${emprestimo.id}">Devolver</button>` : ""}
                 <button class="btn btn-sm botao-excluir" data-acao="excluir-emprestimo" data-id="${emprestimo.id}">Excluir</button>
             </td>
         `;

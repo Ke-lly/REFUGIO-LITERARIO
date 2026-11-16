@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -245,6 +246,63 @@ body {
     gap: 9px;
 }
 
+
+.botao-editar,
+.botao-excluir,
+.botao-devolver,
+.botao-desativar {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+
+.botao-editar {
+    background: #8b6bb5;
+    border: 1px solid #8b6bb5;
+}
+
+.botao-editar:hover {
+    color: white;
+    background: #5f438e;
+    border-color: #5f438e;
+}
+
+.botao-excluir {
+    background: #c96f7c;
+    border: 1px solid #c96f7c;
+}
+
+.botao-excluir:hover {
+    color: white;
+    background: #a94352;
+    border-color: #a94352;
+}
+
+.botao-devolver {
+    background: #8bb2c2;
+    border: 1px solid #8bb2c2;
+}
+
+.botao-devolver:hover {
+    color: white;
+    background: #7ba8b9;
+    border-color: #7ba8b9;
+}
+
+.botao-desativar {
+    background: #bd91b9;
+    border: 1px solid #bd91b9;
+}
+
+.botao-desativar:hover {
+    color: white;
+    background: #98658f;
+    border-color: #98658f;
+}
+
 .form-control,
 .form-select {
     border-color: #dcd5e5;
@@ -309,18 +367,6 @@ body {
     color: var(--texto-secundario);
     font-size: 0.85rem;
     margin-bottom: 10px;
-}
-
-.botao-editar {
-    color: white;
-    background: var(--sucesso);
-    border: none;
-}
-
-.botao-excluir {
-    color: white;
-    background: var(--erro);
-    border: none;
 }
 
 .rodape {
